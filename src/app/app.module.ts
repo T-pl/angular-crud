@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ThoughtcontentComponent } from './components/thoughts/thoughtcontent/thoughtcontent.component';
 import { ThoughtComponent } from './components/thoughts/thought/thought.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ExcluirPensamentosComponent } from './components/thoughts/excluir-pensamentos/excluir-pensamentos.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     CreatThoughtsComponent,
     ThoughtcontentComponent,
     ThoughtComponent,
+    ExcluirPensamentosComponent,
   ],
   imports: [
     HttpClientModule,
