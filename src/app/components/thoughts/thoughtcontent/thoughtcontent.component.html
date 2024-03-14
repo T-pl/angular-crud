@@ -1,0 +1,12 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Meu Mural</h2>
+    <button [routerLink]="['/createThought']" routerLinkActive="router-link-active" type="button"
+      aria-label="Botão Adicionar Pensamento" class="botao">Adicionar pensamento</button>
+  </header>
+  <div class="mural">
+    <div *ngFor="let thought of listThoughts">
+      <app-thought [thought]="thought"></app-thought>
+    </div>
+  </div>
+</section>
