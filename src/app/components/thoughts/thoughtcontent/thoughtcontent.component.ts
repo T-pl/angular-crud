@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Thought } from '../thought';
+import { ServiceThoughtService } from '../service-thought.service';
 
 @Component({
   selector: 'app-thoughtcontent',
@@ -6,9 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './thoughtcontent.component.css',
 })
 export class ThoughtcontentComponent {
-  listThoughts = [
-    { content: 'qualquer', author: 'Tiago', model: 'modelo3' },
-    { content: 'GEOMGOEMG', author: 'Outro', model: 'modelo1' },
-    { content: 'Diferente', author: 'Tnto faz', model: 'modelo2' },
-  ];
+  listThoughts: Thought[] = [];
+  constructor(private service: ServiceThoughtService) {}
+  ngOnInit(): void {
+    this.service.list().subscribe((listThoughts) => {
+      this.listThoughts = listThoughts;
+    });
+  }
 }

@@ -59,10 +59,8 @@
     </div>
 
     <div class="acoes">
-      <button [routerLink]="['/listThought']" type="button" (click)="createThought()" aria-label="Botão Cancelar"
-        class="botao">Cancelar</button>
-      <button routerLinkActive="router-link-active" type="button" aria-label="Botão Salvar"
-        class="botao">Salvar</button>
+      <button (click)="cancel()" type="button" aria-label="Botão Cancelar" class="botao">Cancelar</button>
+      <button (click)="createThought()" type="button" aria-label="Botão Salvar" class="botao">Salvar</button>
     </div>
   </form>
 </section>
