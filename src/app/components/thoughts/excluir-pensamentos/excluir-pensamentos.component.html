@@ -2,8 +2,9 @@
   <div class="modal">
     <p>O pensamento será deletado. <br /> Confirma a exclusão?</p>
     <div class="acoes">
-      <button class="botao botao-excluir" (click)="actionDelThought()">Excluir</button>
-      <button class="botao botao-cancelar" (click)="cancelDel()">Cancelar</button>
+      <button type="button" routerLink="/thoughts/excluirPensamentos/{{thought.id}}" class="botao botao-excluir"
+        (click)="actionDelThought()">Excluir</button>
+      <button type="button" class="botao botao-cancelar" (click)="cancelDel()">Cancelar</button>
     </div>
   </div>
   <div class="overlay"></div>

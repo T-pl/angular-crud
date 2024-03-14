@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class ExcluirPensamentosComponent {
   thought: Thought = {
-    id: 0,
+    id: 1,
     content: '',
     author: '',
     model: '',
