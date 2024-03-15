@@ -14,7 +14,7 @@ export class ThoughtComponent {
     return 'pensamento-p';
   }
   @Input() thought: Thought = {
-    id: 0,
+    id: '',
     content: '',
     author: '',
     model: '',

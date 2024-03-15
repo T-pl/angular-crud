@@ -15,11 +15,11 @@ export class ServiceThoughtService {
   createTh(thought: Thought): Observable<Thought[]> {
     return this.http.post<Thought[]>(this.API, thought);
   }
-  deleteTh(id: number): Observable<Thought> {
+  deleteTh(id: string): Observable<Thought> {
     const url = `${this.API}/${id}`;
     return this.http.delete<Thought>(url);
   }
-  searchById(id: number): Observable<Thought> {
+  searchById(id: string): Observable<Thought> {
     const url = `${this.API}/${id}`;
     return this.http.get<Thought>(url);
   }

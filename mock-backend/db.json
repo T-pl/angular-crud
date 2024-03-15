@@ -1,34 +1,3 @@
 {
-  "thoughts": [
-    {
-      "id": 1,
-      "content": "ffdfsfsfdsfsdfdsfsfdsfsfsfsfsfsfsffffwerffewewfwefwefwe",
-      "author": "Novo",
-      "model": "modelo3"
-    },
-    {
-      "id": 1,
-      "content": "Um teste",
-      "author": "Tiago Ferreira",
-      "model": "modelo1"
-    },
-    {
-      "id": 1,
-      "content": "Novo teste",
-      "author": "qualquer",
-      "model": "modelo1"
-    },
-    {
-      "id": 1,
-      "content": "grngnoenfgoneoge'",
-      "author": "fmdosmfosmfosdofsmo",
-      "model": "modelo1"
-    },
-    {
-      "id": 1,
-      "content": "sfdasfpsapf,asp,fpas,fpdsa,fsa",
-      "author": "fefefefefe",
-      "model": "modelo2"
-    }
-  ]
+  "thoughts": []
 }

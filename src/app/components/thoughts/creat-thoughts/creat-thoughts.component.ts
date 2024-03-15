@@ -9,9 +9,7 @@ import { Router } from '@angular/router';
   styleUrl: './creat-thoughts.component.css',
 })
 export class CreatThoughtsComponent {
-  nextId: number = 1;
   thoughts: Thought = {
-    id: this.nextId,
     content: '',
     author: '',
     model: '',
@@ -19,7 +17,6 @@ export class CreatThoughtsComponent {
   constructor(private service: ServiceThoughtService, private router: Router) {}
   createThought() {
     this.service.createTh(this.thoughts).subscribe(() => {
-      this.nextId++;
       this.router.navigate(['/listThought']);
     });
   }

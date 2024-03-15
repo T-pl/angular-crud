@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class ExcluirPensamentosComponent {
   thought: Thought = {
-    id: 1,
+    id: '',
     content: '',
     author: '',
     model: '',
@@ -22,7 +22,7 @@ export class ExcluirPensamentosComponent {
   ) {}
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.service.searchById(parseInt(id!)).subscribe((thought) => {
+    this.service.searchById(id!).subscribe((thought) => {
       this.thought = thought;
     });
   }
